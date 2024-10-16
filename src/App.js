@@ -12,22 +12,22 @@ function App() {
   return (
     <Router>
       <div>
-        <nav className="navbar navbar-expand-lg navbar-dark" style={{ backgroundColor: '#BA8E23'}}>
+        <nav className="navbar navbar-expand-lg custom-navbar">
           <div className="container-fluid">
-          <Link className="navbar-brand" to="/"><b>My Profile</b></Link>
+          <Link className="navbar-brand" to="/"><b>Jhonna Acebo</b></Link>
             <div>
               <ul className="navbar-nav ms-auto">
                 <li className="nav-item">
-                  <Link className="nav-link" to="/home" style={{color: 'black'}}>Home</Link>
+                  <Link className="nav-link" to="/home">Home</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/about" style={{color: 'black'}}>About</Link>
+                  <Link className="nav-link" to="/about">About</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/skills" style={{color: 'black'}}>Skills</Link>
+                  <Link className="nav-link" to="/skills">Skills</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/contact" style={{color: 'black'}}>Contact</Link>
+                  <Link className="nav-link" to="/contact">Contact</Link>
                 </li>
               </ul>
             </div>
