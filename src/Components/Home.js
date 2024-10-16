@@ -1,15 +1,14 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
+import './Styles.css';
 
 const Home = () => (
-  <Container>
-    <h2 style={{ fontFamily: 'Trebuchet MS', fontWeight: 'bold' }}>
-      Welcome to My Profile!
-    </h2>
-    <p style={{ fontFamily: 'Georgia, serif', fontStyle: 'italic' }}>
-      My career goal is to become a proficient Web Developer.
-    </p>
+  <Container className="home-container">
+    <h2 className="h2">Welcome to my profile!</h2>
+    <p className="p">Hello, I am Jhonna Acebo a third year Computer Science student 
+      and my career goal is to be a proficient web developer.</p>
   </Container>
+  
 );
 
 export default Home;
