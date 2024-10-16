@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Container, Form, Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
+import './Styles.css';
 
 const Contact = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -16,13 +17,16 @@ const Contact = () => {
   };
 
   return (
-    <Container>
-      <h2 style={{ fontFamily: 'Trebuchet MS', fontWeight: 'bold'}}>Contact Me</h2>
-      <p style={{ fontFamily: 'Trebuchet MS', fontStyle: 'italic'}}>
-        If you have any questions, feel free to reach out by filling in the form below:</p>
+    <Container className="contact-container">
+      <h2 className="h2">Contact Me</h2>
+      <ul className="contact-list">
+        <li>Email: jhonnaacebo4@gmail.com | acebojhonna72@gmail.com</li>
+        <li>Phone Number: +63 915 019 4457</li>
+      </ul>
+      <p className="p">If you have any questions, feel free to send your messages by filling in the form below:</p>
       <Form onSubmit={handleSubmit}>
         <Form.Group controlId="formName" className="mb-2">
-          <Form.Label style={{ fontFamily: 'Trebuchet MS', fontWeight: 'bold'}}>Name:</Form.Label>
+          <Form.Label>Name:</Form.Label>
           <Form.Control
             formSize="sm"
             type="text"
@@ -33,7 +37,7 @@ const Contact = () => {
           />
         </Form.Group>
         <Form.Group controlId="formEmail" className="mb-3">
-          <Form.Label style={{ fontFamily: 'Trebuchet MS', fontWeight: 'bold'}}>Email:</Form.Label>
+          <Form.Label>Email:</Form.Label>
           <Form.Control
             type="email"
             name="email"
@@ -43,7 +47,7 @@ const Contact = () => {
           />
         </Form.Group>
         <Form.Group controlId="formMessage" className="mb-3">
-          <Form.Label style={{ fontFamily: 'Trebuchet MS', fontWeight: 'bold'}}>Message:</Form.Label>
+          <Form.Label>Message:</Form.Label>
           <Form.Control
             as="textarea"
             rows={3}
@@ -54,7 +58,7 @@ const Contact = () => {
             placeholder="Type your message here..."
           />
         </Form.Group>
-        <Button style={{ fontFamily: 'Trebuchet MS', fontWeight: 'bold'}} variant="primary" type="submit">
+        <Button variant="primary" type="submit">
           Submit
         </Button>
       </Form>
