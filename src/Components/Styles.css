@@ -42,14 +42,17 @@
 
   .h2 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
   }
   
   .p {
     font-family: 'Georgia, serif';
-    font-style: italic; 
+    font-style: italic;
+    color: black; 
   }
 
   .p1 {
     font-family: 'Georgia, serif';
+    color:black;
   }
   
