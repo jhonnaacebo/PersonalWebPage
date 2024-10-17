@@ -1,5 +1,5 @@
-import React from 'react';
-import { Container } from 'react-bootstrap';
+import React from 'react'; // Required for using JSX and React component features.
+import { Container } from 'react-bootstrap'; // Bootstrap's Container component for responsive layout.
 import './Styles.css';
 
 const Home = () => (
